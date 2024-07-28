@@ -2,41 +2,20 @@
  * @file preset.js
  * @overview Base theme preset configuration.
  * @example
- * ```js
-// tailwind.config.js
-export default {
-  presets: [
-    require('./base.config'),
-  ],
-  // ...
-}
- * ```
+
+  @1. Add preset to your tailwind.config.js
+  export default {
+    presets: [
+      require('./src/themes/base/preset'),
+    ],
+  }
+  @2. Add lib JS file to your entry component (E.g. main.tsx)
+  import './src/themes/base/lib';
+
  * @require npx tailfront@latest themes base
+ * @license https://github.com/tailfront/themes/blob/main/LICENSE
  * @see https://tailfront.io/themes/base
  * @see https://tailwindcss.com/docs/presets
- */
-/**
-MIT License
-
-Copyright (c) 2024 Tailfront
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
  */
 
 const colors = require('tailwindcss/colors');
