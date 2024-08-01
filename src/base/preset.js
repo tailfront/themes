@@ -6,11 +6,11 @@
   @1. Add preset to your tailwind.config.js
   export default {
     presets: [
-      require('./src/themes/base/preset'),
+      require('./config/themes/base/preset'),
     ],
   }
   @2. Add lib JS file to your entry component (E.g. main.tsx)
-  import './src/themes/base/lib';
+  import './config/themes/base/lib';
 
  * @require npx tailfront@latest themes base
  * @license https://github.com/tailfront/themes/blob/main/LICENSE
