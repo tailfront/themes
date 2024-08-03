@@ -10,7 +10,7 @@
     ],
   }
   @2. Add lib JS file to your entry component (E.g. main.tsx)
-  import './config/themes/base/lib';
+  import '../config/themes/base/lib';
 
  * @require npx tailfront@latest themes base
  * @license https://github.com/tailfront/themes/blob/main/LICENSE
