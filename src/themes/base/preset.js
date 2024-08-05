@@ -88,8 +88,14 @@ module.exports = {
     extend: {
       colors: {
         accent: colors.blue,
-        type: colors.neutral,
-        container: colors.neutral,
+        type: {
+          ...colors.neutral,
+          50: colors.white,
+        },
+        container: {
+          ...colors.neutral,
+          50: colors.white,
+        },
         stroke: colors.neutral,
       },
     },
